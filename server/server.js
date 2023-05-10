@@ -16,6 +16,7 @@ app.get('/',(req,res)=>{
 
  
 app.use('/api/addQuestions',require('./routes/api/addQuestions'));
+app.use('/api/createTest',require('./routes/api/createTest'));
 
 
 const PORT=process.env.PORT||5000;

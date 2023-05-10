@@ -3,7 +3,7 @@ const router=express.Router();
 
 
 
-const Test =require('../../models/Test');
+const Test =require('../../models/testSchema');
 
 
 router.post('/',[

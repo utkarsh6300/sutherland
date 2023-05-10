@@ -10,14 +10,13 @@ const testSchema = new mongoose.Schema({
     required: true
   },
   candidates: [{
-    type:String,
-    // type: mongoose.Schema.Types.ObjectId,
-    // ref: 'Candidate'
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Candidate'
   }],
-  expiryTime: {
-    type: Date, 
-    required: true
-  }
+  // expiryTime: {
+  //   type: Date, 
+  //   required: true
+  // }
 });
 
 const Test = mongoose.model('Test', testSchema);
