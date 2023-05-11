@@ -25,7 +25,7 @@ async(req,res)=> {
   //      return res.status(400).json({ errors:errors.array()})
   //  }
 
-   const { Question, options, correctOption }=req.body;
+   const { question, options, correctOption }=req.body;
 
    try{
 
@@ -39,7 +39,7 @@ async(req,res)=> {
 
   
   QuestionCollectionObject=new QuestionCollection({
-    Question, options, correctOption
+    question, options, correctOption
    });
    
 
